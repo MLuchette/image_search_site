@@ -400,7 +400,7 @@ class Image_CRUD {
 * Licensed under the MIT license:
 * http://www.opensource.org/licenses/MIT
 */
-
+/*
 class UploadHandler
 {
 	private $options;
@@ -439,7 +439,7 @@ class UploadHandler
 				'max_width' => 80,
 				'max_height' => 80
 		)
-		*/
+		*//*
 				)
 		);
 		if ($options) {
@@ -750,4 +750,4 @@ class UploadHandler
 		echo json_encode($success);
 	}
 
-}
+}*/

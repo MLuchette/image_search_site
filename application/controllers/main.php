@@ -45,8 +45,31 @@ class Main extends CI_Controller {
         $this->_example_output($output);
 	}
 	
+	function editImages()
+	{
+		$this->load->library('Image_CRUD');
+		$image_crud = new Image_CRUD();
+	
+		$image_crud->set_primary_key_field('id');
+		$image_crud->set_url_field('url');
+		$image_crud->set_table('example_3')
+		->set_relation_field('category_id')
+		->set_ordering_field('priority')
+		->set_image_path('assets/uploads');
+			
+		$output = $image_crud->render();
+	
+		$this->images($output);
+	}
+	
 	function _example_output($output = null)
     {
+		
         $this->load->view('dbadmin.php',$output);    
     }
+	
+	function images($output = null)
+	{
+		$this->load->view('images.php',$output);	
+	}
 }
