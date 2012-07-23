@@ -22,8 +22,8 @@
 <body>
 	Hi, <strong><?php echo $username; ?></strong>! You are logged in now. <?php echo anchor('/auth/logout/', 'Logout'); ?>
 	<div>
-		<a href='<?php echo site_url('main/index')?>'>Edit Users</a> |
-		<a href='<?php echo site_url('examples/imgCRUD')?>'>Edit Images</a> |
+		<a href='<?php echo site_url('main/index')?>'>Edit Businesses</a> |
+		<a href='<?php echo site_url('images_examples/')?>'>Edit Images</a> |
 	</div>
 	<div style='height:20px;'></div>  
     <div>
