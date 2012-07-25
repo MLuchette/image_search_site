@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost:8080/image_search_site/';
+$config['base_url']	= 'http://localhost/image_search_site/';
 
 /*
 |--------------------------------------------------------------------------

@@ -23,7 +23,10 @@
 	Hi, <strong><?php echo $username; ?></strong>! You are logged in now. <?php echo anchor('/auth/logout/', 'Logout'); ?>
 	<div>
 		<a href='<?php echo site_url('main/index')?>'>Edit Businesses</a> |
-		<a href='<?php echo site_url('images_examples/')?>'>Edit Images</a> |
+		<a href='<?php echo site_url('main/editImages/22')?>'>Edit Images</a> | <br>
+		<?php foreach($rows as $r=>$key) { ?>
+			<a href='<?php echo site_url('main/editImages/'.$key->id); ?>'><?php echo $key->name; ?></a><br>
+		<?php } ?>
 	</div>
 	<div style='height:20px;'></div>  
     <div>
